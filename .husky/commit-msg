@@ -1,0 +1,11 @@
+###
+ # @Author: Hongzf
+ # @Date: 2022-10-08 14:29:24
+ # @LastEditors: Hongzf
+ # @LastEditTime: 2022-10-08 14:48:11
+ # @Description: 
+### 
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+# 定位到 scripts/verifyCommit.js文件，执行文件中的代码
+node scripts/verifyCommit.js

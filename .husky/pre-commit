@@ -1,0 +1,11 @@
+###
+ # @Author: Hongzf
+ # @Date: 2022-10-08 14:45:03
+ # @LastEditors: Hongzf
+ # @LastEditTime: 2022-10-08 14:48:37
+ # @Description: 
+### 
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+# 代码执⾏之前的钩⼦pre-commit：去执⾏ESLint代码格式
+npm run lint
