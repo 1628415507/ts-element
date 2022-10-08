@@ -2,14 +2,14 @@
  * @Author: Hongzf
  * @Date: 2022-10-08 14:31:24
  * @LastEditors: Hongzf
- * @LastEditTime: 2022-10-08 14:41:02
+ * @LastEditTime: 2022-10-08 14:52:04
  * @Description: 
  */
 const msg = require('fs').readFileSync('.git/COMMIT_EDITMSG', 'utf-8').trim()
 // 验证在GitHub中的提交⽇志都符合type(scope): message 的格式
 const commitRE = /^(revert: )?(feat|fix|docs|dx|style|refactor|perf|test|workflow|build|ci|chore|types|wip|release)(\(.+\))?: .{1,50}/
 const mergeRe = /^(Merge pull request|Merge branch)/
-
+// 
 if (!commitRE.test(msg)) {
     if (!mergeRe.test(msg)) {
         console.log('git commit信息校验不通过')
