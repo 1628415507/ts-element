@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-export default{
+export default {
   name:'ElFooter'
 }
 </script>
