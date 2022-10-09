@@ -126,7 +126,8 @@ $--button-large-padding-vertical: 15px !default;
 $--button-large-padding-horizontal: 25px !default;
 
 
-// bem
+// 【bem】
+// 前缀-名称
 @mixin b($block) {
   // contain-> el-contain
   $B: $namespace + '-' + $block !global;
@@ -145,6 +146,7 @@ $--button-large-padding-horizontal: 25px !default;
     }
   }
 }
+// --后缀名称
 @mixin m($modifier) {
   $selector: &;
   $currentSelector: '';

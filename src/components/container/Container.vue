@@ -2,7 +2,7 @@
  * @Author: Hongzf
  * @Date: 2022-10-08 15:22:00
  * @LastEditors: Hongzf
- * @LastEditTime: 2022-10-08 16:40:08
+ * @LastEditTime: 2022-10-09 10:14:38
  * @Description: 布局容器
 -->
 
@@ -38,9 +38,9 @@ const slots = useSlots();
 // 其他情况是⽔平布局。
 const isVertical = computed(() => {
     if (slots && slots.default) {
-        console.log('【 slots.default 】-38', slots.default());
+        // console.log('【 slots.default 】-38', slots.default());
         return slots.default().some((vn: VNode) => {
-            console.log('【 vn 】-40', vn);
+            // console.log('【 vn 】-40', vn);
             const tag = (vn.type as Component).name;
             return tag === 'ElHeader' || tag === 'ElFooter';
         });

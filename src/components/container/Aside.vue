@@ -1,3 +1,10 @@
+<!--
+ * @Author: Hongzf
+ * @Date: 2022-10-08 16:43:10
+ * @LastEditors: Hongzf
+ * @LastEditTime: 2022-10-08 17:56:24
+ * @Description: 
+-->
 
 
 
@@ -10,7 +17,7 @@
   </aside>
 </template>
 <script lang="ts">
-export default{
+export default {
   name:'ElAside'
 }
 </script>
